@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    build: ./
+    ports:
+      - '8080:80'
+    volumes:
+      - './build:/var/www'
+    restart: always
+    tty: true
